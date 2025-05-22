@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiFi-LoFi | Convert PNG to Editable SVG Wireframe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.4/dist/tesseract.min.js"></script>
+  <script async src="https://docs.opencv.org/4.7.0/opencv.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>HiFi-LoFi</h1>
+    <p>Upload a hi-fi image and convert it to an editable wireframe SVG</p>
+
+    <input type="file" id="imageInput" accept="image/*" />
+    <canvas id="canvas" style="display:none;"></canvas>
+    <svg id="svgOutput"></svg>
+
+    <button id="downloadSVG">Download SVG</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
